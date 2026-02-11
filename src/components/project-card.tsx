@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import {
   Bug,
   ShoppingCart,
@@ -9,7 +8,7 @@ import {
   Brain,
   MessageCircle,
   ArrowUpRight,
-  ExternalLink,
+  Github,
 } from "lucide-react";
 import type { Project } from "@/data/projects";
 
@@ -91,25 +90,15 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
 
         {/* Actions */}
         <div className="flex items-center gap-3">
-          {project.status === "live" ? (
-            <Link
-              href={project.href}
-              className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-lg bg-brand-600/20 text-brand-300 hover:bg-brand-600/30 border border-brand-500/20 hover:border-brand-500/40 transition-all"
-            >
-              View Project
-              <ArrowUpRight className="w-3.5 h-3.5" />
-            </Link>
-          ) : (
-            <span className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-lg bg-white/5 text-surface-500 border border-white/5 cursor-not-allowed">
-              View Project
-              <ExternalLink className="w-3.5 h-3.5" />
-            </span>
-          )}
           <a
-            href="#"
-            className="inline-flex items-center gap-2 px-4 py-2 text-sm text-surface-500 hover:text-surface-300 transition-colors"
+            href={project.repo}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-lg bg-brand-600/20 text-brand-300 hover:bg-brand-600/30 border border-brand-500/20 hover:border-brand-500/40 transition-all"
           >
-            Source Code
+            <Github className="w-3.5 h-3.5" />
+            View Repository
+            <ArrowUpRight className="w-3.5 h-3.5" />
           </a>
         </div>
       </div>
