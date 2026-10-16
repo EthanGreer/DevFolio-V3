@@ -16,7 +16,7 @@
 
 ## Architecture
 
-This portfolio hub serves as the central gateway to a microservices-inspired ecosystem — 6 standalone applications, each deployed independently and built to production standards.
+This portfolio hub serves as the central gateway to a microservices-inspired ecosystem - 6 standalone applications, each deployed independently and built to production standards.
 
 ```mermaid
 graph TD
@@ -76,10 +76,10 @@ Open [http://localhost:3000](http://localhost:3000) to view the hub.
 
 ## Design Philosophy
 
-- **Dark-mode Glassmorphism** — backdrop-blur effects with translucent borders
-- **Shared Design Tokens** — brand (blue-indigo) and surface (neutral-gray) color scales
-- **Typography** — Inter for UI, JetBrains Mono for code
-- **Micro-animations** — fade-in, slide-up, and hover transitions throughout
+- **Dark-mode Glassmorphism** - backdrop-blur effects with translucent borders
+- **Shared Design Tokens** - brand (blue-indigo) and surface (neutral-gray) color scales
+- **Typography** - Inter for UI, JetBrains Mono for code
+- **Micro-animations** - fade-in, slide-up, and hover transitions throughout
 
 ---
 
