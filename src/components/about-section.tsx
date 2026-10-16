@@ -53,8 +53,8 @@ export function AboutSection() {
                 user interfaces.
               </p>
               <p>
-                This portfolio ecosystem isn&apos;t just a collection of demos
-                &mdash; it&apos;s a monorepo of interconnected, production-grade
+                This portfolio ecosystem isn&apos;t just a collection of demos -
+                it&apos;s a monorepo of interconnected, production-grade
                 applications that share a design system, authentication layer,
                 and deployment pipeline. Each project targets a specific
                 engineering discipline.
